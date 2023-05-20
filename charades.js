@@ -232,7 +232,7 @@ let cards = [
         document.getElementById("sips").innerHTML = "Sips: " + sips;
       }
       
-      if (timer >= 30) {
+      if (timer >= 90) {
         stopGame();
       }
     }, 1000);
