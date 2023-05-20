@@ -32,8 +32,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 120px;
+    width: 250px;
+    height: 150px;
     margin: 10px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -48,7 +48,7 @@ body {
   
   .game-choice h3 {
     color: #333333;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
   }
   
@@ -63,5 +63,20 @@ body {
   
   .game-choice:active h3 {
     transform: translateY(1px);
+  }
+  
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    .game-choice {
+      width: 180px;
+      height: 100px;
+    }
+  
+    .game-choice h3 {
+      font-size: 16px;
+    }
   }
   
