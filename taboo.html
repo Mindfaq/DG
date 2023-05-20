@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="taboo.css">
+</head>
+<body>
+
+<h2>Taboo Game</h2>
+
+<p id="tabooCard"></p>
+
+<button id="startBtn" onclick="startGame()">Start Game</button>
+<button id="skipBtn" onclick="newTaboo()" disabled>Skip Card</button>
+<button id="correctBtn" onclick="correctGuess()" disabled>Correct Guess</button>
+<button id="stopBtn" onclick="stopGame()" disabled>Stop Game</button>
+
+<p id="timer">Time: 0</p>
+<p id="score">Score: 0</p>
+<p id="penalties">Penalties: 0</p>
+
+<script src="taboo.js"></script>
+
+</body>
+</html>
