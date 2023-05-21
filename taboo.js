@@ -223,6 +223,7 @@ let cards = [
   
     timer = 0;
     score = 0;
+    let gameDuration = document.getElementById("gameDuration").value; // Get the game duration from the input field
     document.getElementById("timer").innerHTML = "Time: " + timer;
     document.getElementById("score").innerHTML = "Score: " + score;
     interval = setInterval(() => {
@@ -234,7 +235,7 @@ let cards = [
         document.getElementById("penalties").innerHTML = "Penalties: " + penalties;
       }
       
-      if (timer >= 30) {
+      if (timer >= gameDuration) { // Use the game duration to determine when to stop the game
         stopGame();
       }
     }, 1000);
